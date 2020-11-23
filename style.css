@@ -1,0 +1,38 @@
+main {
+    width: calc(13*48px);
+    height: calc(11*46px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(13*48px);
+    height: calc(11*46px);
+}
+
+.wall {
+    background-color: rgb(70, 66, 66);
+    border: 1px rgb(13, 210, 236) solid;
+}
+
+.path {
+    background-color: rgb(151, 24, 224);
+    border: 1px rgb(13, 210, 236) solid;
+}
+
+.begin {
+    background-color: rgb(25, 211, 25);
+    border: 1px rgb(13, 210, 236) solid;
+}
+
+.treasure {
+    background-color: rgb(25, 211, 25);
+    border: 1px rgb(13, 210, 236) solid;
+}
+
+.joueur {
+    margin-top: 10px;
+    margin-left: 10px
+}
