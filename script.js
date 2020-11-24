@@ -46,6 +46,7 @@ document.body.addEventListener("keydown", function (e) {
             posX++
             document.querySelector("p > div:nth-child(" + posX + ")").appendChild(joueur)
             console.log(e.code)
+            
 
         } else if (document.querySelector("p > div:nth-child(" + (posX + 1) + ")").classList.contains('wall')) {
             console.log('hit the wall')
