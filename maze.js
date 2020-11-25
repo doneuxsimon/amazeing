@@ -44,7 +44,7 @@ let posX = 15;
 document.body.addEventListener("keydown", function (e) {
     if (e.code === "ArrowRight") {
         if (document.querySelector("p > div:nth-child(" + (posX + 1) + ")").classList.contains('treasure')) {
-            alert("T'as gagne batard");
+            alert("Bien joué, passons au niveau suivant!");
             posX++
             document.querySelector("p > div:nth-child(" + posX + ")").appendChild(joueur)
             console.log(e.code)
@@ -64,7 +64,7 @@ document.body.addEventListener("keydown", function (e) {
 
     if (e.code === "ArrowLeft") {
         if (document.querySelector("p > div:nth-child(" + (posX - 1) + ")").classList.contains('treasure')) {
-            alert("T'as gagne batard");
+            alert("Bien joué, passons au niveau suivant!");
             posX--
             document.querySelector("p > div:nth-child(" + posX + ")").appendChild(joueur)
             console.log(e.code)
@@ -72,14 +72,7 @@ document.body.addEventListener("keydown", function (e) {
             level.src = lvl
             main.appendChild(level)
 
-        } else if (document.querySelector("p > div:nth-child(" + (posX - 1) + ")").classList.contains('begin')) {
-            alert("C'est pas par la couillon");
-            posX--
-            document.querySelector("p > div:nth-child(" + posX + ")").appendChild(joueur)
-            console.log(e.code)
-
-        }
-        else if (document.querySelector("p > div:nth-child(" + (posX - 1) + ")").classList.contains('wall')) {
+        } else if (document.querySelector("p > div:nth-child(" + (posX - 1) + ")").classList.contains('wall')) {
             console.log('hit the wall')
         } else {
             posX--
@@ -91,7 +84,7 @@ document.body.addEventListener("keydown", function (e) {
 
     if (e.code === "ArrowUp") {
        if (document.querySelector("p > div:nth-child(" + (posX - x) + ")").classList.contains('treasure')) {
-            alert("T'as gagne batard");
+            alert("Bien joué, passons au niveau suivant!");
             posX-= x
             document.querySelector("p > div:nth-child(" + posX + ")").appendChild(joueur)
             console.log(e.code)
@@ -111,7 +104,7 @@ document.body.addEventListener("keydown", function (e) {
 
     if (e.code === "ArrowDown") {
        if (document.querySelector("p > div:nth-child(" + (posX + x) + ")").classList.contains('treasure')) {
-            alert("T'as gagne batard");
+            alert("Bien joué, passons au niveau suivant!");
             posX+= x
             document.querySelector("p > div:nth-child(" + posX + ")").appendChild(joueur)
             console.log(e.code)
